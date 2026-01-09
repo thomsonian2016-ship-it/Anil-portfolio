@@ -43,4 +43,56 @@ body {
   font-size: 14px;
   font-weight: 500;
   border-radius: 4px;
+  transition: background-color 0.2s ease;
 } 
+
+.cta-btn:hover {
+  background-color: #1e4fd8;
+}
+
+#skills {
+  padding: 80px 0;
+  margin-left: 80px; /* same as hero-content */
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  margin-left: 80px; /* align with hero */
+}
+
+
+.skill-card {
+  padding: 24px;
+  background-color: #f9f9f9; /* subtle off-white for separation */
+  border-radius: 6px;        /* soft rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* subtle depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* slightly lift the card */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* slightly stronger shadow */
+}
+
+#skills h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444; /* secondary text */
+}
+
+
